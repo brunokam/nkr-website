@@ -1,0 +1,438 @@
+/*
+A custom Bootstrap 3.1 template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+* {
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    min-height: calc(100% - 1px);
+}
+
+@media (min-width: 0) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+}
+
+pre {
+    background-color: #f0f0f0;
+}
+
+code {
+    font-family: monospace, 'Courier New', sans-serif;
+    font-size: 1.7em;
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+.navbar-trans {
+    background-color: #9C3032;
+    color: #fff;
+}
+
+.navbar-trans li > a:hover, .navbar-trans li > a:focus, .navbar-trans li.active {
+    background-color: #83080b;
+}
+
+.navbar-trans a {
+    color: #fefefe;
+}
+
+.navbar-trans .form-control:focus {
+    border-color: #eee;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container-fluid {
+    min-height: 16%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.row.head {
+    margin-bottom: 50px;
+}
+
+hr.primary {
+    border: 3px solid;
+    max-width: 40vw;
+    margin: 30px auto;
+}
+
+.fa.title-decoration {
+    display: inline-block;
+    padding: 0 7px;
+    position: relative;
+    top: -46px;
+    font-family: 'FontAwesome';
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.inline-link {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.inline-link .fa {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.footer {
+    border-radius: 15px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.4;
+}
+
+.footer .inline-graphical-link {
+    margin: 0 10px;
+}
+
+.footer .inline-graphical-link a {
+    margin: 5px !important;
+}
+
+@media (min-width: 0) {
+    .footer .inline-graphical-link a {
+        font-size: 1.7em;
+    }
+
+    .footer .inline-graphical-link i {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .inline-graphical-link a {
+        margin: 5px !important;
+        font-size: 2.2em;
+    }
+
+    .footer .inline-graphical-link i {
+        font-size: 2.2em;
+    }
+}
+
+.featured-list h2 {
+    margin: 10px auto;
+    font-weight: 300;
+}
+
+.featured-list .description {
+    margin: 30px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.featured-list .feature {
+    margin: 15px auto;
+}
+
+.featured-list .feature i {
+    font-size: 2em;
+}
+
+.featured-list .feature span {
+    margin-left: 10px;
+}
+
+@media (min-width: 0) {
+    .featured-list .feature span {
+        font-size: 1.2em;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .featured-list .feature span {
+        font-size: 1.6em;
+        line-height: 1.4;
+    }
+}
+
+.project {
+    border: 3px dashed #c95353;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.project h2 {
+    margin: 10px auto;
+}
+
+.project .description {
+    min-height: 90px;
+    margin: 30px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.publication {
+    margin: 80px auto;
+}
+
+.publication-name {
+    width: 80px;
+    height: 80px;
+}
+
+.publication-name p {
+    background-color: #888;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    color: #333;
+}
+
+.member {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+}
+
+.member p {
+    margin-bottom: 1px;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.member a, .member i {
+    color: #999;
+}
+
+.member .detail {
+    visibility: hidden;
+}
+
+.member .member-name {
+    margin-top: 10px;
+    line-height: 120%;
+}
+
+.member .member-name {
+    color: #d95c5c;
+}
+
+.member .member-position {
+    font-weight: bold;
+    color: #777;
+}
+
+.member.inactive img,
+.member.inactive .member-name,
+.member.inactive .member-position {
+    opacity: 0.4;
+}
+
+.member.inactive:hover img,
+.member.inactive:hover .member-name,
+.member.inactive:hover .member-position {
+    opacity: 1;
+}
+
+.member:hover {
+    border-color: #ddd;
+}
+
+.member:hover .detail {
+    visibility: visible !important;
+}
+
+.member .label-inactive {
+    width: 100%;
+    position: absolute;
+    top: 7px;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+}
+
+.quote .author {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.8em;
+    line-height: 170%;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about {
+    background-color: #e0e0e0;
+    color: #686868;
+}
+
+#about hr.primary {
+    border-color: #686868;
+}
+
+#mission {
+    background-color: #fff;
+    color: #888;
+}
+
+#mission hr.primary {
+    border-color: #888;
+}
+
+#features {
+    background-color: #333;
+    color: #888;
+}
+
+#projects {
+    background-color: #d95c5c;
+    color: #fff;
+}
+
+#projects hr.primary {
+    border-color: #fff;
+}
+
+#projects .footer {
+    background-color: #c95353;
+}
+
+#projects .footer .inline-link {
+    color: #fff;
+}
+
+#getting-started {
+    background-color: #fff;
+    color: #888;
+}
+
+#getting-started .lead {
+    margin: 20px 0;
+}
+
+#getting-started code {
+    font-size: 1.3em;
+}
+
+#getting-started img {
+    width: 100%;
+}
+
+#getting-started h2 {
+    margin-top: 100px;
+    color: #555;
+}
+
+#join-us {
+    background-color: #e0e0e0;
+    color: #686868;
+}
+
+#join-us hr.primary {
+    border-color: #686868;
+}
+
+#join-us .footer {
+    background-color: rgba(217, 92, 92, 0.1);
+    display: inline-block;
+    margin: auto 10px;
+    padding: 10px;
+}
+
+#join-us .footer .inline-graphical-link i, #join-us .footer .inline-graphical-link a {
+    color: #d95c5c;
+}
+
+#team {
+    background-color: #fff;
+    color: #888;
+}
+
+#team hr.primary {
+    border-color: #888;
+}
+
+#contact {
+    background: center no-repeat fixed #d95c5c url('http://gmum.net/files/gmum.r/img/page/building.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+#contact .lead.layer {
+    background-color: #fff;
+    padding: 20px;
+    color: #888;
+}
+
+footer {
+    background-color: #555;
+    width: 100%;
+    padding: 10px 0;
+    color: #ddd;
+}
+
+footer p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.9em !important;
+}
