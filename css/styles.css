@@ -28,6 +28,12 @@ section {
     min-height: calc(100% - 1px);
 }
 
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 0) {
     h1 {
         font-size: 4em;
@@ -384,12 +390,12 @@ hr.primary {
 }
 
 #join-us {
-    background-color: #e0e0e0;
-    color: #686868;
+    background-color: #333;
+    color: #888;
 }
 
 #join-us hr.primary {
-    border-color: #686868;
+    border-color: #888;
 }
 
 #join-us .footer {

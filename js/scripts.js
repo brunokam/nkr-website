@@ -1,11 +1,11 @@
 $(document).on('ready', function() {
-    /* activate scrollspy menu */
+    // Activates scrollspy menu
     $('body').scrollspy({
         target: '#navbar-collapsible',
         offset: 50
     });
 
-    /* smooth scrolling sections */
+    // Smooth scrolling sections
     $('a[href*=#]:not([href=#])').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -20,7 +20,7 @@ $(document).on('ready', function() {
         }
     });
 
-    $('pre code').each(function(i, block) {
+    /*$('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
-    });
+    });*/
 });
