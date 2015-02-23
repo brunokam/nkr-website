@@ -42,6 +42,10 @@ iframe {
     h2 {
         font-size: 2.5em;
     }
+
+    h3 {
+        font-size: 1.7em;
+    }
 }
 
 @media (min-width: 992px) {
@@ -51,6 +55,10 @@ iframe {
 
     h2 {
         font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 2.3em;
     }
 }
 
@@ -68,8 +76,9 @@ code {
 }
 
 .navbar-trans {
-    background-color: #9C3032;
+    background-color: #9c3032;
     color: #fff;
+    z-index: 2;
 }
 
 .navbar-trans li > a:hover, .navbar-trans li > a:focus, .navbar-trans li.active {
@@ -166,6 +175,55 @@ hr.primary {
     }
 }
 
+.under-constr {
+    background-color: #888;
+    padding: 10px 30px;
+    position: fixed;
+    left: 0;
+    top: 51px;
+    z-index: 1;
+    color: #fff;
+}
+
+.under-constr .lead {
+    margin: 0;
+    padding: 0;
+}
+
+.under-constr span {
+    margin-left: 10px;
+}
+
+.newsfeed {
+    background-color: #d95c5c;
+    width: 270px;
+    padding: 20px 15px;
+    position: fixed;
+    right: 0;
+    top: 51px;
+    z-index: 1;
+    color: #fff;
+}
+
+.newsfeed .lead {
+    font-size: 1.35em;
+}
+
+.newsfeed .lead i {
+    margin-right: 7px;
+}
+
+.newsfeed .item a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.newsfeed .item span {
+    display: block;
+    font-size: 0.8em;
+    color: #a63d3f;
+}
+
 .featured-list h2 {
     margin: 10px auto;
     font-weight: 300;
@@ -205,9 +263,7 @@ hr.primary {
 }
 
 .project {
-    border: 3px dashed #c95353;
-    border-radius: 15px;
-    margin: 20px;
+    margin: 50px 20px 20px 20px;
     padding: 10px;
 }
 
@@ -223,98 +279,15 @@ hr.primary {
     line-height: 1.8;
 }
 
-.publication {
-    margin: 80px auto;
+.project .footer {
+    background-color: #c95353;
+    -webkit-box-shadow: 2px 4px 0 #9c3032;
+    -moz-box-shadow: 2px 4px 0 #9c3032;
+    box-shadow: 2px 4px 0 #9c3032;
 }
 
-.publication-name {
-    width: 80px;
-    height: 80px;
-}
-
-.publication-name p {
-    background-color: #888;
-    border-radius: 40px;
-    width: 80px;
-    height: 80px;
-    color: #333;
-}
-
-.member {
-    border: 1px solid transparent;
-    border-radius: 10px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
-    position: relative;
-}
-
-.member p {
-    margin-bottom: 1px;
-}
-
-.member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
-}
-
-.member a, .member i {
-    color: #999;
-}
-
-.member .detail {
-    visibility: hidden;
-}
-
-.member .member-name {
-    margin-top: 10px;
-    line-height: 120%;
-}
-
-.member .member-name {
-    color: #d95c5c;
-}
-
-.member .member-position {
-    font-weight: bold;
-    color: #777;
-}
-
-.member.inactive img,
-.member.inactive .member-name,
-.member.inactive .member-position {
-    opacity: 0.4;
-}
-
-.member.inactive:hover img,
-.member.inactive:hover .member-name,
-.member.inactive:hover .member-position {
-    opacity: 1;
-}
-
-.member:hover {
-    border-color: #ddd;
-}
-
-.member:hover .detail {
-    visibility: visible !important;
-}
-
-.member .label-inactive {
-    width: 100%;
-    position: absolute;
-    top: 7px;
-    font-size: 0.7em;
-    font-weight: bold;
-    color: #999;
-    text-align: center;
-}
-
-.quote .author {
-    margin: 0;
-    font-size: 1.6em;
-    font-weight: bold;
+.project .footer .inline-link {
+    color: #fff;
 }
 
 .lead {
@@ -351,42 +324,12 @@ hr.primary {
 }
 
 #projects {
-    background-color: #d95c5c;
+    background-color: #bf3436;
     color: #fff;
 }
 
 #projects hr.primary {
     border-color: #fff;
-}
-
-#projects .footer {
-    background-color: #c95353;
-}
-
-#projects .footer .inline-link {
-    color: #fff;
-}
-
-#getting-started {
-    background-color: #fff;
-    color: #888;
-}
-
-#getting-started .lead {
-    margin: 20px 0;
-}
-
-#getting-started code {
-    font-size: 1.3em;
-}
-
-#getting-started img {
-    width: 100%;
-}
-
-#getting-started h2 {
-    margin-top: 100px;
-    color: #555;
 }
 
 #join-us {
@@ -428,6 +371,33 @@ hr.primary {
     background-color: #fff;
     padding: 20px;
     color: #888;
+}
+
+#statute {
+    background-color: #fff;
+    color: #888;
+}
+
+#statute .lead {
+    margin: 20px 0;
+}
+
+#statute h3 {
+    margin-top: 40px;
+    color: #707070;
+}
+
+#statute ul {
+    list-style-type: none;
+}
+
+#statute ul li {
+    margin: 10px auto;
+    font-size: 1.3em;
+}
+
+#statute ul li ul li {
+    font-size: 1em;
 }
 
 footer {
