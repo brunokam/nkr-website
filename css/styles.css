@@ -262,21 +262,26 @@ hr.primary {
 
 .project h2 {
     margin: 10px auto;
+    text-shadow: 3px 3px 0 #111;
 }
 
 .project .description {
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 15px;
     min-height: 90px;
     margin: 30px 0;
+    padding: 10px;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.8;
+    text-shadow: 1px 1px 0 #000;
 }
 
 .project .footer {
-    background-color: #7CCCE6;
-    -webkit-box-shadow: 2px 4px 0 #046482;
-    -moz-box-shadow: 2px 4px 0 #046482;
-    box-shadow: 2px 4px 0 #046482;
+    background-color: #9c3032;
+    -webkit-box-shadow: 2px 4px 0 #570406;
+    -moz-box-shadow: 2px 4px 0 #570406;
+    box-shadow: 2px 4px 0 #570406;
 }
 
 .project .footer .inline-link {
@@ -332,22 +337,27 @@ hr.primary {
 }
 
 #projects {
-    background-color: #48B3D4;
+    background-color: #fff;
     color: #fff;
+    position: relative;
+}
+
+#projects img.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #projects h1 {
-    color: #034559;
-    text-shadow: 3px 0 0 #37A9CC;
+    color: #fff;
+    text-shadow: 3px 3px 0 #111;
 }
 
 #projects hr.primary {
-    border-color: #034559;
-}
-
-#projects .fa.title-decoration {
-    color: #034559;
-    text-shadow: 3px 0 0 #37A9CC;
+    border-color: #fff;
+    box-shadow: 3px 3px 0 #111;
 }
 
 #join-us {

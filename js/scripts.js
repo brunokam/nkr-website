@@ -1,3 +1,17 @@
+function changeProjectBackground(projectBackgrounds, projectsImg, i) {
+    projectsImg.fadeOut(400, function() {
+        projectsImg
+            .css('background-image', 'url("/assets/img/' + projectBackgrounds[i] + '")')
+            //.css('width', $('#projects').width() + 'px')
+            //.css('height', $('#projects').height() + 'px')
+            .fadeIn(400, function() {
+                setTimeout(function () {
+                    changeProjectBackground(projectBackgrounds, projectsImg, (i + 1) % projectBackgrounds.length)
+                }, 5000);
+            });
+    });
+}
+
 $(document).on('ready', function() {
     // Activates scrollspy menu
     $('body').scrollspy({
@@ -51,4 +65,14 @@ $(document).on('ready', function() {
             }
         }
     });
+
+    // Controls project slider
+    var projectBackgrounds = [
+        'projects1.jpg',
+        'projects2.jpg'
+    ];
+
+    var projectsImg = $('#projects img.background');
+
+    changeProjectBackground(projectBackgrounds, projectsImg, 0);
 });
