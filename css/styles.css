@@ -24,7 +24,8 @@ iframe {
 }
 
 h1 {
-    font-weight: normal;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
 }
 
 @media (min-width: 0) {
@@ -307,18 +308,6 @@ hr.primary {
     width: 20%;
 }
 
-#about h1 {
-    text-shadow: 3px 0 0 #eee;
-}
-
-#about hr.primary {
-    border-color: #777;
-}
-
-#about .fa.title-decoration {
-    text-shadow: 3px 0 0 #eee;
-}
-
 #mission {
     background-color: #fff;
     color: #777;
@@ -352,12 +341,7 @@ hr.primary {
 
 #projects h1 {
     color: #fff;
-    text-shadow: 3px 3px 0 #111;
-}
-
-#projects hr.primary {
-    border-color: #fff;
-    box-shadow: 3px 3px 0 #111;
+    text-shadow: 3px 0 0 #111;
 }
 
 #join-us {
@@ -401,6 +385,11 @@ hr.primary {
     background: center no-repeat fixed #d95c5c url('http://gmum.net/files/gmum.r/img/page/building.jpg');
     background-size: cover;
     color: #fff;
+}
+
+#contact h1 {
+    color: #fff;
+    text-shadow: 3px 0 0 #111;
 }
 
 #contact .lead.layer {
