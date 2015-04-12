@@ -273,10 +273,10 @@ hr.primary {
 }
 
 .project .footer {
-    background-color: #C74A4A;
-    -webkit-box-shadow: 2px 4px 0 #9c3032;
-    -moz-box-shadow: 2px 4px 0 #9c3032;
-    box-shadow: 2px 4px 0 #9c3032;
+    background-color: #C44141;
+    -webkit-box-shadow: 2px 4px 0 #96292B;
+    -moz-box-shadow: 2px 4px 0 #96292B;
+    box-shadow: 2px 4px 0 #96292B;
 }
 
 .project .footer .inline-link {
@@ -328,20 +328,22 @@ hr.primary {
 }
 
 #projects {
-    background-color: #bf3436;
+    background-color: #48B3D4;
     color: #fff;
 }
 
 #projects h1 {
-    text-shadow: 3px 0 0 #ff5e5e;
+    color: #046482;
+    text-shadow: 3px 0 0 #7CCCE6;
 }
 
 #projects hr.primary {
-    border-color: #fff;
+    border-color: #046482;
 }
 
 #projects .fa.title-decoration {
-    text-shadow: 3px 0 0 #ff5e5e;
+    color: #046482;
+    text-shadow: 3px 0 0 #7CCCE6;
 }
 
 #join-us {
