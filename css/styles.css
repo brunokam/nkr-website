@@ -273,10 +273,10 @@ hr.primary {
 }
 
 .project .footer {
-    background-color: #C44141;
-    -webkit-box-shadow: 2px 4px 0 #96292B;
-    -moz-box-shadow: 2px 4px 0 #96292B;
-    box-shadow: 2px 4px 0 #96292B;
+    background-color: #7CCCE6;
+    -webkit-box-shadow: 2px 4px 0 #046482;
+    -moz-box-shadow: 2px 4px 0 #046482;
+    box-shadow: 2px 4px 0 #046482;
 }
 
 .project .footer .inline-link {
@@ -298,6 +298,10 @@ hr.primary {
     color: #777;
 }
 
+#about img {
+    width: 20%;
+}
+
 #about h1 {
     text-shadow: 3px 0 0 #eee;
 }
@@ -312,7 +316,7 @@ hr.primary {
 
 #mission {
     background-color: #fff;
-    color: #888;
+    color: #777;
 }
 
 #mission h1 {
@@ -320,7 +324,7 @@ hr.primary {
 }
 
 #mission hr.primary {
-    border-color: #888;
+    border-color: #777;
 }
 
 #mission .fa.title-decoration {
@@ -333,22 +337,22 @@ hr.primary {
 }
 
 #projects h1 {
-    color: #046482;
-    text-shadow: 3px 0 0 #7CCCE6;
+    color: #034559;
+    text-shadow: 3px 0 0 #37A9CC;
 }
 
 #projects hr.primary {
-    border-color: #046482;
+    border-color: #034559;
 }
 
 #projects .fa.title-decoration {
-    color: #046482;
-    text-shadow: 3px 0 0 #7CCCE6;
+    color: #034559;
+    text-shadow: 3px 0 0 #37A9CC;
 }
 
 #join-us {
     background-color: #333;
-    color: #888;
+    color: #999;
 }
 
 #join-us h1 {
@@ -356,7 +360,7 @@ hr.primary {
 }
 
 #join-us hr.primary {
-    border-color: #888;
+    border-color: #999;
 }
 
 #join-us .fa.title-decoration {
