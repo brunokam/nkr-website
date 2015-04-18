@@ -19,8 +19,12 @@ section {
 
 iframe {
     border: 0;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+a, a:hover {
+    color: #9c3032;
 }
 
 h1 {
@@ -289,9 +293,74 @@ hr.primary {
     color: #fff;
 }
 
+.member {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+}
+
+.member p {
+    margin-bottom: 1px;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.member a, .member i {
+    color: #999;
+}
+
+.member .detail {
+    visibility: hidden;
+}
+
+.member .member-name {
+    margin-top: 10px;
+    line-height: 120%;
+}
+
+.member .member-name {
+    color: #d95c5c;
+}
+
+.member .member-position {
+    font-weight: bold;
+    color: #777;
+}
+
+.member.inactive img,
+.member.inactive .member-name,
+.member.inactive .member-position {
+    opacity: 0.4;
+}
+
+.member.inactive:hover img,
+.member.inactive:hover .member-name,
+.member.inactive:hover .member-position {
+    opacity: 1;
+}
+
+.member:hover {
+    border-color: #ddd;
+}
+
+.member:hover .detail {
+    visibility: visible !important;
+}
+
 .lead {
     font-size: 1.8em;
     line-height: 170%;
+}
+
+.justify {
+    text-align: justify;
 }
 
 .cell {
@@ -329,6 +398,10 @@ hr.primary {
     background-color: #fff;
     color: #fff;
     position: relative;
+}
+
+#projects * {
+    z-index: 1;
 }
 
 #projects img.background {
@@ -400,7 +473,7 @@ hr.primary {
 
 #statute {
     background-color: #fff;
-    color: #888;
+    color: #777;
 }
 
 #statute h1 {
@@ -431,6 +504,38 @@ hr.primary {
 
 #statute ul li ul li {
     font-size: 1em;
+}
+
+#turtlebot, #emotiv, #quadrocopter, #lazik {
+    background-color: #fff;
+    color: #555;
+}
+
+#turtlebot h1, #emotiv h1, #quadrocopter h1, #lazik h1 {
+    text-shadow: 3px 0 0 #eee;
+}
+
+#turtlebot hr.primary, #emotiv hr.primary, #quadrocopter hr.primary, #lazik hr.primary {
+    border-color: #555;
+}
+
+#turtlebot .lead, #emotiv .lead, #quadrocopter .lead {
+    margin-bottom: 40px;
+}
+
+#turtlebot iframe {
+    margin: 0 30px 10px 0;
+    float: left;
+}
+
+#turtlebot .feature span {
+    font-size: 1.2em;
+}
+
+#emotiv img, #quadrocopter img, #lazik img {
+    width: 400px;
+    margin: 0 30px 10px 0;
+    float: left;
 }
 
 footer {

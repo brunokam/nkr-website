@@ -1,14 +1,16 @@
-function changeProjectBackground(projectBackgrounds, projectsImg, i) {
-    projectsImg.fadeOut(400, function() {
-        projectsImg
-            .css('background-image', 'url("/assets/img/' + projectBackgrounds[i] + '")')
-            //.css('width', $('#projects').width() + 'px')
-            //.css('height', $('#projects').height() + 'px')
-            .fadeIn(400, function() {
-                setTimeout(function () {
-                    changeProjectBackground(projectBackgrounds, projectsImg, (i + 1) % projectBackgrounds.length)
-                }, 5000);
-            });
+function changeProjectBackground(projectBackgrounds, projectImgs, i, bgId) {
+    projectImgs[bgId].css('z-index', 1);
+    projectImgs[(bgId + 1) % 2]
+        .css('z-index', 0)
+        .css({
+            'background-image': 'url("/assets/img/' + projectBackgrounds[i] + '")'
+        })
+        .show();
+
+    projectImgs[bgId].fadeOut(600, function() {
+        setTimeout(function () {
+            changeProjectBackground(projectBackgrounds, projectImgs, (i + 1) % projectBackgrounds.length, (bgId + 1) % 2)
+        }, 5000);
     });
 }
 
@@ -69,10 +71,15 @@ $(document).on('ready', function() {
     // Controls project slider
     var projectBackgrounds = [
         'projects1.jpg',
-        'projects2.jpg'
+        'projects2.jpg',
+        'projects3.jpg',
+        'projects4.jpg'
     ];
 
-    var projectsImg = $('#projects img.background');
+    var randomBackground = Math.floor((Math.random() * projectBackgrounds.length) + 1);
 
-    changeProjectBackground(projectBackgrounds, projectsImg, 0);
+    var projectImgs = [$('#projects #background0'), $('#projects #background1')];
+
+    projectImgs[0].css('background-image', 'url("/assets/img/' + projectBackgrounds[0] + '")');
+    changeProjectBackground(projectBackgrounds, projectImgs, randomBackground, 0);
 });

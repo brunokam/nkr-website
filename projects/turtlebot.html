@@ -12,7 +12,10 @@
     <link href="/css/styles.css" rel="stylesheet">
 
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="/js/html5.js"></script>
@@ -53,30 +56,99 @@
 </div>
 
 
-
-
-<section class="container-fluid" id="getting-started">
+<section class="container-fluid" id="turtlebot">
     <div class="row head">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
             <h1>turtlebot</h1>
             <hr class="primary">
-            <i class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i><i class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i><i class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i>
+            <i class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i><i
+                class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i><i
+                class="fa fa-star fa-2x title-decoration" style="background-color: #fff"></i>
         </div>
     </div>
 
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-        <p class="lead">
-            Ten projekt już niebawem doczeka się opisu.
+    <div class="col-sm-10 col-sm-offset-1 text-center">
+        <p class="lead justify">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MOEjL8JDvd0" frameborder="0"
+                    allowfullscreen></iframe>
+            Turtlebot jest robotem którego można w bardzo łatwy sposób modyfikować i rozbudowywać dzięki
+            bardzo prostej i modułowej konstrukcji. Sama platforma ROS, dzięki której jesteśmy w stanie
+            programować na turtlebota jest opensource więc jesteśmy w stanie na każdym etapie podejrzeć
+            źródła kodu i dzięki temu poznać od podszewki jak wszystko działa jak również korzystać już
+            z gotowych bibliotek i rozwiązań nie wgłębiając się w fizyczne aspekty sterowania robotem.
+        </p>
+        <p class="lead justify">
+            Nasz robot jest zbudowany z platformy jeżdżącej kobuki, kinecta i małego laptopa na którym jest system
+            operacyjny UBUNTU z pełni skonfigurowaną platformą ROS.<br><br>
         </p>
 
+        <div class="row">
+        <div class="col-sm-6 text-center">
+            <p class="lead">
+                Aktualny rozwój projektu:
+            </p>
+
+            <div class="featured-list">
+                <div class="feature">
+                    <i class="fa fa-2x fa-check"></i>
+                    <span>zaimplementowany klient Androidowy/konsolowy do sterowania robotem</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-check"></i>
+                    <span>color tracker</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-check"></i>
+                    <span>People Follower z użycem algorytmu optical flow</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-check"></i>
+                    <span>odpowiedni serwer do sterowania robotem po stronie robota</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 text-center">
+            <p class="lead">
+                Cele:
+            </p>
+
+            <div class="featured-list">
+                <div class="feature">
+                    <i class="fa fa-2x fa-circle-o"></i>
+                    <span>własna implementacja algorytmu SLAM</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-circle-o"></i>
+                    <span>przesyłanie obrazu na klienta androidowego z kinecta</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-circle-o"></i>
+                    <span>kolejne implementacje algorytmów do rozpoznawania obrazów w celu sterowania robotem</span>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-2x fa-circle-o"></i>
+                    <span>przesyłanie obrazu na klienta androidowego z kinecta</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <p class="lead">
+            Postęp projektu można śledzić na
+            <a href="https://github.com/uj-robotics/turtlebot">https://github.com/uj-robotics/turtlebot</a>
+        </p>
+
+        <p class="lead">
+            Koordynator: Piotr Kruk
+        </p>
     </div>
 </section>
 
 
-
-
 <footer>
-    <p class="lead text-center">Copyleft 2015 Naukowe Koło Robotyki i Sztucznej Inteligencji UJ, using modified Bootstrap v. 3.3.2</p>
+    <p class="lead text-center">Copyleft 2015 Naukowe Koło Robotyki i Sztucznej Inteligencji UJ, using modified
+        Bootstrap v. 3.3.2</p>
 </footer>
 
 </body>
