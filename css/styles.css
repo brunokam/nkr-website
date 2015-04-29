@@ -222,6 +222,13 @@ hr.primary {
     color: #a63d3f;
 }
 
+#news-frame {
+    width: 100%;
+    margin-top: 51px;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
 .featured-list h2 {
     margin: 10px auto;
     font-weight: 300;
@@ -450,8 +457,16 @@ hr.primary {
     color: #888;
 }
 
+#team h1 {
+    text-shadow: 3px 0 0 #eee;
+}
+
 #team hr.primary {
     border-color: #888;
+}
+
+#team .fa.title-decoration {
+    text-shadow: 3px 0 0 #eee;
 }
 
 #contact {

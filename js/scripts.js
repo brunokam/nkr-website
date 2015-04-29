@@ -14,6 +14,17 @@ function changeProjectBackground(projectBackgrounds, projectImgs, i, bgId) {
     });
 }
 
+// Adjusts news iframe height to its content height
+function setIframeHeight() {
+    var iframe = $('#news-frame')[0];
+    if (iframe) {
+        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+        if (iframeWin.document.body) {
+            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+        }
+    }
+}
+
 $(document).on('ready', function() {
     // Activates scrollspy menu
     $('body').scrollspy({
@@ -57,7 +68,7 @@ $(document).on('ready', function() {
 
                 if (item.title.length > 0) {
                     $('<p class="item"><a href="'
-                    + item.link + '">'
+                    + '/news.html#' + item.link + '">'
                     + item.title + '</a><span>'
                     + item.updated.substr(0, item.updated.length - 9) + '</span></p>')
                         .appendTo('.newsfeed .items');
