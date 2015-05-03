@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/justifiedGallery.min.css" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
 
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +24,7 @@
     <script src="/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/js/jquery.jfeed.pack.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.justifiedGallery.min.js"></script>
     <script src="/js/scripts.js"></script>
 </head>
 <body>
@@ -55,27 +57,33 @@
 </div>
 
 
-<script type="application/javascript">
-    $(document).on('ready', function() {
-        var newsFrame = $('#news-frame');
 
-        if (location.hash.length > 0) {
-            var url = location.hash.substr(1);
-            newsFrame.attr('src', url);
-        }
 
-        newsFrame.on('load', function() {
-            setIframeHeight();
-        });
-    });
-</script>
+<section class="container-fluid" id="statute">
+    <div class="row head">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h1>galeria</h1>
+            <hr class="primary">
+            <i class="fa fa-camera-retro fa-2x title-decoration" style="background-color: #fff"></i>
+        </div>
+    </div>
 
-<iframe id="news-frame" src="/news/"></iframe>
+    <div class="col-sm-12">
+        <p class="lead text-center">
+            KrakRobot 2014
+        </p>
+
+        <div class="gallery krakrobot2014">
+
+        </div>
+    </div>
+</section>
+
+
 
 
 <footer>
-    <p class="lead text-center">Copyleft 2015 Naukowe Koło Robotyki i Sztucznej Inteligencji UJ,
-        using modified Bootstrap v. 3.3.2, using WordPress v. 4.1.2</p>
+    <p class="lead text-center">Copyleft 2015 Naukowe Koło Robotyki i Sztucznej Inteligencji UJ, using modified Bootstrap v. 3.3.2</p>
 </footer>
 
 </body>

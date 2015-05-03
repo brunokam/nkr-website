@@ -93,4 +93,13 @@ $(document).on('ready', function() {
 
     projectImgs[0].css('background-image', 'url("/assets/img/' + projectBackgrounds[0] + '")');
     changeProjectBackground(projectBackgrounds, projectImgs, randomBackground, 0);
+
+    // Controls gallery
+    var krakrobot2014 = $('.gallery.krakrobot2014');
+    for (var i = 1; i <= 50; ++i) {
+        var a = '<a href="/assets/img/krakrobot2014/' + i + '.jpg">' +
+        '<img src="/assets/img/krakrobot2014/' + i + '.jpg"></a>';
+        krakrobot2014.append(a);
+    }
+    krakrobot2014.justifiedGallery();
 });
