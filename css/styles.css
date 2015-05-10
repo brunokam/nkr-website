@@ -375,6 +375,26 @@ hr.primary {
     vertical-align: middle;
 }
 
+.gallery {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery:hover {
+    border-color: #ddd;
+}
+
+.gallery img {
+    width: 60%;
+    margin-top: 20px;
+    position: relative;
+}
+
 #about {
     background-color: #e0e0e0;
     color: #777;
@@ -486,20 +506,20 @@ hr.primary {
     color: #888;
 }
 
-#statute {
+#statute, #gallery {
     background-color: #fff;
     color: #777;
 }
 
-#statute h1 {
+#statute h1, #gallery h1 {
     text-shadow: 3px 0 0 #eee;
 }
 
-#statute .fa.title-decoration {
+#statute .fa.title-decoration, #gallery .fa.title-decoration {
     text-shadow: 3px 0 0 #eee;
 }
 
-#statute .lead {
+#statute .lead, #gallery .lead {
     margin: 20px 0;
 }
 

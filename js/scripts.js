@@ -95,11 +95,40 @@ $(document).on('ready', function() {
     changeProjectBackground(projectBackgrounds, projectImgs, randomBackground, 0);
 
     // Controls gallery
-    var krakrobot2014 = $('.gallery.krakrobot2014');
-    for (var i = 1; i <= 50; ++i) {
-        var a = '<a href="/assets/img/krakrobot2014/' + i + '.jpg">' +
-        '<img src="/assets/img/krakrobot2014/' + i + '.jpg"></a>';
-        krakrobot2014.append(a);
+    var galleries = [
+        {
+            id: 'krakrobot2014',
+            fullName: 'KrakRobot 2014',
+            imgs: 50
+        }
+    ];
+
+    for (var i = 0; i < galleries.length; ++i) {
+        var galleryId = galleries[i].id,
+            galleryFullName = galleries[i].fullName,
+            galleryImgs = galleries[i].imgs;
+
+        $('.gallery').on('click', function() {
+            var column = $(
+                '<div class="col-xs-12 text-center">' +
+                '<p class="lead">' + galleryFullName + '</p>' +
+                '</div>');
+            var imageContainer = $(
+                '<div class="' + galleryId + '"></div>'
+            );
+
+            $(this).parent().hide();
+            imageContainer.appendTo(column);
+            column.appendTo($(this).parent().parent());
+
+            for (var i = 1; i <= galleryImgs; ++i) {
+                var a = '<a href="/assets/img/' + galleryId + '/' + i + '.jpg">' +
+                    '<img src="/assets/img/' + galleryId + '/' + i + '.jpg"></a>';
+                imageContainer.append(a);
+            }
+
+            imageContainer.justifiedGallery();
+            location.hash = galleryId;
+        });
     }
-    krakrobot2014.justifiedGallery();
 });
