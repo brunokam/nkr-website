@@ -375,7 +375,7 @@ hr.primary {
     vertical-align: middle;
 }
 
-.gallery {
+.gallery-link {
     border: 1px solid transparent;
     border-radius: 10px;
     width: 80%;
@@ -385,14 +385,32 @@ hr.primary {
     cursor: pointer;
 }
 
-.gallery:hover {
+.gallery-link:hover {
     border-color: #ddd;
 }
 
-.gallery img {
+.gallery-link img {
     width: 60%;
     margin-top: 20px;
     position: relative;
+}
+
+.gallery-body .lead {
+    margin-bottom: 0 !important;
+}
+
+.gallery-back {
+    background-color: #ddd;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 14px !important;
+    color: #fff;
+}
+
+.gallery-back .fa {
+    margin-right: 7px;
+    font-size: 14px !important;
 }
 
 #about {
