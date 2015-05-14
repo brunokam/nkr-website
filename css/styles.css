@@ -313,7 +313,7 @@ hr.primary {
     margin-bottom: 1px;
 }
 
-.member img {
+.member .member-picture {
     width: 150px;
     height: 150px;
     border-radius: 75px;
@@ -339,6 +339,10 @@ hr.primary {
 .member .member-position {
     font-weight: bold;
     color: #777;
+}
+
+.member .member-email-pic {
+    height: 17px;
 }
 
 .member.inactive img,
