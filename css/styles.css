@@ -194,21 +194,28 @@ hr.primary {
 
 .newsfeed {
     background-color: #bbb;
-    width: 270px;
-    padding: 20px 15px;
+    width: 100%;
+    padding: 10px 0 10px 70px;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 51px;
     z-index: 1;
     color: #fff;
 }
 
 .newsfeed .lead {
+    margin: 0 20px 0 0;
     font-size: 1.35em;
+    float: left;
 }
 
 .newsfeed .lead i {
     margin-right: 7px;
+}
+
+.newsfeed .item {
+    margin: 0 30px 0 0;
+    float: left;
 }
 
 .newsfeed .item a {
@@ -222,7 +229,7 @@ hr.primary {
     color: #a63d3f;
 }
 
-#news-frame {
+#news-frame, #wiki-frame {
     width: 100%;
     margin-top: 51px;
     margin-bottom: -5px;
@@ -444,7 +451,7 @@ hr.primary {
 }
 
 #projects {
-    background-color: #fff;
+    background-color: #777;
     color: #fff;
     position: relative;
 }
@@ -593,6 +600,10 @@ hr.primary {
     width: 400px;
     margin: 0 30px 10px 0;
     float: left;
+}
+
+#facebook-link {
+    color: #6d84b4;
 }
 
 footer {

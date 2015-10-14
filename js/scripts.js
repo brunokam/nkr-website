@@ -16,12 +16,11 @@ function changeProjectBackground(projectBackgrounds, projectImgs, i, bgId) {
 
 // Adjusts news iframe height to its content height
 function setIframeHeight() {
-    var iframe = $('#news-frame')[0];
+    var iframe = document.getElementById('news-frame');
+
     if (iframe) {
-        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-        if (iframeWin.document.body) {
-            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-        }
+        iframe.height = '';
+        iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     }
 }
 
@@ -54,6 +53,8 @@ function loadGallery(id, fullName, imgCount) {
         setupGallery();
     });
 
+    $('.gallery-link').parent().detach();
+
     $(this).detach();
     buttonBack.appendTo(column);
     imageContainer.appendTo(column);
@@ -72,9 +73,17 @@ function loadGallery(id, fullName, imgCount) {
 // Setups gallery
 function setupGallery() {
     var galleries = {
+        'general': {
+            fullName: 'Ogólne',
+            imgs: 34
+        },
         'krakrobot2014': {
             fullName: 'KrakRobot 2014',
             imgs: 50
+        },
+        'dniwydzialu': {
+            fullName: 'Dni Wydziału',
+            imgs: 27
         }
     };
 
@@ -89,6 +98,7 @@ function setupGallery() {
 
     clearHash();
     $('.gallery-body').detach();
+    $('.gallery-link').parent().detach();
 
     for (var galleryId in galleries) {
         var galleryFullName = galleries[galleryId].fullName,
@@ -149,10 +159,14 @@ $(document).on('ready', function () {
         url: '/news/feed/',
         success: function (feed) {
             var n = 0;
-            for (var i = 0; i < feed.items.length && n < 5; ++i) {
+            for (var i = 0; i < feed.items.length && n < 3; ++i) {
                 var item = feed.items[i];
 
                 if (item.title.length > 0) {
+                    if (item.title.length > 28) {
+                        item.title = item.title.substr(0, 28) + '...';
+                    }
+
                     $('<p class="item"><a href="'
                     + '/news.html#' + item.link + '">'
                     + item.title + '</a><span>'
